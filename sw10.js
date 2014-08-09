@@ -1,4 +1,12 @@
 var convertFirstLetter = function(word) {
+	{
+		var letter = word.split(" ");
+		for (var i = 0; i < letter.length; i++) {
+			var x = letter[i].charAt(0).toUpperCase();
+			letter[i] = x + letter[i].substr(1);
+		}
+		return letter.join(" ");
 	var output = "";
-	word[] = Character.toUpperCase(word.charAt(0)) + word.substring(1);
+	}
 }
+convertFirstLetter('bahay kubo kahit munti');
